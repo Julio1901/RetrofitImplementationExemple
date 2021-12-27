@@ -3,7 +3,7 @@
 ## Esse é um simples APP que dispõe de uma única activity central. Ele foi criado com o intuito de realizar uma implementação da biblioteca Retrofit2 para consumir uma REST API cujo end-point se encontra no endereço "jsonplaceholde". O APP foi criado a título de estudo das tecnologias supracitadas. Ao entrar no mesmo, ele realiza uma uma chamada para a API com um id fixado no código e exibe um dos campos do Json para o usuário.
 
 
-> Status do Projeto: Terminado $#9989
+> Status do Projeto: Terminado :white_check_mark:
 
 -Estrutura do projeto
 <br/>
