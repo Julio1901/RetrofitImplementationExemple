@@ -1,7 +1,7 @@
 package com.julio.simpleretrofitimplementation.model
 
 
-//01 - init
+
 data class Post(
     val userId: Int,
     val id: Int,
@@ -9,6 +9,3 @@ data class Post(
     val body: String
 
 )
-
-
-//01 - final

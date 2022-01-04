@@ -1,10 +1,11 @@
 package com.julio.simpleretrofitimplementation.api
 
+import com.julio.simpleretrofitimplementation.api.model.JsonPlaceHolderPost
 import com.julio.simpleretrofitimplementation.model.Post
-import retrofit2.http.DELETE
-import retrofit2.http.GET
+import retrofit2.Response
+import retrofit2.http.*
 
-//02-init
+
 
 interface SimpleApi {
 
@@ -14,8 +15,16 @@ interface SimpleApi {
     @GET("posts/1")
     suspend fun getPost() : Post
 
+    @POST("posts")
+    suspend fun createNewPost(@Body newPost : JsonPlaceHolderPost)  : Post
+
+    @PUT("posts/{id}")
+    suspend fun updatePost(@Body postToChanged : Post, @Path("id") id : Int) : Post
+
+    @DELETE("posts/{id}")
+    suspend fun deletePost(@Path("id") id : Int) : Response<Post>
+
+
 
 
 }
-
-//02 - final
